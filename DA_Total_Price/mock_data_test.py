@@ -5,11 +5,13 @@ import os
 
 #connect to in-memory SQLite database
 conn = sqlite3.connect(':memory:')
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 def run_test():
     try:
+        database_path = os.path.join(BASE_DIR, 'database.sql')
+        solution_path = os.path.join(BASE_DIR, 'solution.sql')
         #setup database from database.sql
-        with open('database.sql', 'r', encoding='utf-8') as f:
+        with open(database_path, 'r', encoding='utf-8') as f:
             setup_sql = f.read()
         
         #use executescript to run multiple SQL statements
@@ -17,7 +19,7 @@ def run_test():
         print("Database Setup: Success (Loaded from database.sql)")
 
         #pull SQL query from solution.sql
-        with open('solution.sql', 'r', encoding='utf-8') as f:
+        with open(solution_path, 'r', encoding='utf-8') as f:
             original_sql = f.read()
  
         #change SQL syntax from PostgreSQL to SQLite extract to strftime
