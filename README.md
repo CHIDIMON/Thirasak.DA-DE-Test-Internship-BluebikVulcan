@@ -1,7 +1,7 @@
 # Assessment Bluebik Vulcan (Data Analyst & Data Engineer)
 
 
-Repository นี้รวบรวมคำตอบสำหรับแบบทดสอบตำแหน่ง **Data Analyst** และ **Data Engineer** โดยแบ่งแยกโฟลเดอร์ตามโจทย์ที่ได้รับมอบหมายครับ## โครงสร้างไฟล์ (Repository Structure)```text
+Repository นี้รวบรวมคำตอบสำหรับแบบทดสอบตำแหน่ง **Data Analyst** และ **Data Engineer** โดยแบ่งแยกโฟลเดอร์ตามโจทย์ที่ได้รับมอบหมายครับ## โครงสร้างไฟล์ (Repository Structure)
 
 ```
 
